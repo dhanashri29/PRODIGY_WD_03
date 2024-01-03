@@ -1,0 +1,116 @@
+:root {
+    --primary-color: rgb(167, 69, 212);
+    --primary-color-dark:rgb(215, 26, 95);
+    --secondary-color: white;
+    --secondary-color-dark: black;
+    --text-light: #34495E;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background-image: linear-gradient( to bottom right, var(--primary-color-dark), var(--primary-color));
+    color: white;
+}
+
+.title {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.display {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.display .player {
+    padding: .5rem;
+    margin: 1rem;
+    color: white;
+    background-color: #3333;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border-color: rgb(69, 7, 42);
+    text-transform: capitalize;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    grid-template-rows: 35% 35% 35%;
+    max-width: 350px;
+    padding-bottom: .5rem;
+}
+
+.option {
+    border: 2px solid white;
+    border-radius: 10px;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    cursor: pointer;
+    margin-bottom: .1rem;
+}
+
+.tile:hover {
+    color: #500553;
+    background-color: rgb(236, 229, 229);
+}
+
+.playerX {
+    color: rgb(159, 204, 95);
+}
+
+.playerO {
+    color: #47c0cd;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.controls button {
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+#restart {
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+    background-color: #e05a75;
+}
+
+
+
